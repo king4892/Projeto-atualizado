@@ -36,7 +36,7 @@ public class DispositivoController {
 
 	@GetMapping("/cadastro/dispositivos")
 	public ModelAndView retornaCadastroDispositivo(Dispositivo dispositivo) {
-		ModelAndView mv = new ModelAndView("cadastro/cadastro_dispositivo");
+		ModelAndView mv = new ModelAndView("lista/dispositivo/listar/listar_dispositivo");
 		mv.addObject("dispositivos", dispositivo);
 
 		List<String> modelos = Arrays.asList("Selecione..", "Motorola", "Samsung");

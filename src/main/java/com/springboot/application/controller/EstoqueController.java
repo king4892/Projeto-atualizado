@@ -76,7 +76,7 @@ public class EstoqueController {
 	@GetMapping("/cadastro/estoque")
 	public ModelAndView retornaEstoque(Estoque estoque) {
 
-		ModelAndView mv = new ModelAndView("cadastro/cadastro_estoque");
+		ModelAndView mv = new ModelAndView("lista/estoque/lisar/listar_estoque");
 		mv.addObject("estoques", estoque);
 
 		List<String> tipoDeEstoque = Arrays.asList("Selecione..", "PERECIVEIS", "MERCEARIA DOCE", 
