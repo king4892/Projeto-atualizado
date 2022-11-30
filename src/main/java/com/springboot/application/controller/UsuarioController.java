@@ -98,7 +98,7 @@ public class UsuarioController {
 	
 	@GetMapping("/cadastro/usuarios/listar")
 	public ModelAndView listar() {
-		ModelAndView mv = new ModelAndView("lista/usuario/listar/listar_usuario");
+		ModelAndView mv = new ModelAndView("templates/lista/usuario/listar/listar_usuario");
 		mv.addObject("listaUsuarios", usuarioRepository.findAll());
 		return mv;
 	}

@@ -48,7 +48,7 @@ public class ProdutoController {
 
 	@GetMapping("/cadastro/produto")
 	public ModelAndView retornaCadastroProduto(Produto produto) {
-		ModelAndView mv = new ModelAndView("lista/produto/listar/listar_produtos");
+		ModelAndView mv = new ModelAndView("templates/lista/produto/listar/listar_produtos");
 		mv.addObject("produtos", produto);
 		
 		List<String> listaDeCategoria = Arrays.asList("Selecione..", "Outros" ,"Alimentos","Limpeza", "Liquidos","Tecidos","Fitas");
